@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Your Mood</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <style>
+    
+        body {
+            background: url(img/newbg.png);
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <section class="section is-fullheight">
+
+    <h1 class = 'title'>Log Your Mood</h1>
+
+    <p>
+        Get started by keeping track of how you're feeling
+    </p>
+    <p>
+    <ul>
+        <li>Are you angry today?</li>
+        <li>Has something made you feel sad?</li>
+        <li>Do you have a happy song to sing?</li>
+        <li>Is someone grumpy this evening?</li>
+        <li>Make a note of your mood and anything you think has triggered
+            you below.
+        </li>
+    </ul>
+    </p>
+    <hr />
+
+    <form action="process-moodlog.php" method="post" novalidate>
+       
+        <div class="field">
+            <label class="label" for="name">Name</label>
+         <div class="control">
+            <input type="text" id="name" name="name" placeholder="Enter name">
+        </div>
+    </div>
+
+        <div class="field">
+            <label class="label" for="email">Email</label>
+            <div class="control"></div>
+            <input type="email" id="email" name="email" placeholder="example@email.com">
+        </div>
+    </div>
+
+        <div class="field">
+            <label class="label" for="password">Password</label>
+            <div class="control"></div>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+        </div>
+    </div>
+
+        <div class="field">
+            <label class="label" for="password_confirmation">Repeat Password</label>
+            <div class="control"></div>
+            <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Re-enter password">
+        </div>
+    </div>
+        <div class="control">
+        <button class = "button is-primary is-rounded">Sign Up</button>
+    </div>
+    </form>
+
+</section>
+
+</body>
+
+</html>
